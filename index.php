@@ -88,20 +88,28 @@
 ////    $cptKim->retirer(-500);
 //    $cptKim->retirer(2000);
 //    echo "<h2>" . $cptKim . "</h2>";
-
-
-    echo "<h3>Avant le mariage</h3>";
+//
+//    echo "<h3>Avant le mariage</h3>";
+//
+//    $persFatima = new Personne("Fatima", 25);
+//    echo "<h3>{$persFatima}</h3>";
+//
+//    $persSofian = new Personne("Sofian", 17);
+//    echo "<h3>{$persSofian}</h3>";
+//
+//    // On effectue le mariage
+//    $persSofian->seMarier($persFatima);
+//
+//    echo "<h3>Avant le mariage</h3>";
+//
+//    echo "<h3>{$persSofian}</h3>";
+//    echo "<h3>{$persFatima}</h3>";
 
     $persFatima = new Personne("Fatima", 25);
-    echo "<h3>{$persFatima}</h3>";
+    echo "<h4>".Personne::getCompteur()."</h4>";
 
     $persSofian = new Personne("Sofian", 25);
-    echo "<h3>{$persSofian}</h3>";
+    echo "<h4>".Personne::getCompteur()."</h4>";
 
-    // On effectue le mariage
-    $persSofian->seMarier($persFatima);
-
-    echo "<h3>Avant le mariage</h3>";
-
-    echo "<h3>{$persSofian}</h3>";
-    echo "<h3>{$persFatima}</h3>";
+    $persKim = new Personne("Kim", 25);
+    echo "<h4>".Personne::getCompteur()."</h4>";
