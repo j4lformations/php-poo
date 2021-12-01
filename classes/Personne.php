@@ -2,9 +2,9 @@
 
     class Personne
     {
-        private string $prenom;
-        private int $age;
-        private Personne $conjoint;
+        private $prenom;
+        private $age;
+        private $conjoint;
 
         public function __construct(string $prenom, int $age)
         {
@@ -32,7 +32,20 @@
             return $this->conjoint;
         }
 
-        public function seMarier(Personne $p):void{
+        public function seMarier(Personne $personne): void
+        {
+            if ($this->age >= 18 && $personne->age >= 18 && $this->conjoint == null && $personne->conjoint == null) {
+                $this->conjoint = $personne;
+                $personne->conjoint = $this; //this ==> represente l'objet courant
+            }
+        }
 
+        public function __toString(): string
+        {
+            $affichage = $this->prenom . ", " . $this->age . " ans";
+            if ($this->conjoint != null) {
+                $affichage.=", a pour conjoint {$this->conjoint->prenom}, {$this->conjoint->age} ans";
+            }
+            return $affichage;
         }
     }

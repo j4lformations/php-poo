@@ -8,8 +8,8 @@
     class Compte
     {
         //Les attributs de la classes generalement encapsuler
-        private string $numero;
-        private float $solde;
+        private $numero;
+        private $solde;
 
         // LE CONSTRUCTEUR
         public function __construct(string $numero, float $solde)
@@ -35,7 +35,7 @@
             return $this->numero;
         }
 
-        public function getSolde(): float|int
+        public function getSolde(): float
         {
             return $this->solde;
         }
