@@ -73,18 +73,20 @@
 //    //$cptKim->numero = "N°002";
 //    //var_dump($cptKim);
 
-    $cptKim = new Compte("001", 5000);
-    var_dump($cptKim);
+//    $cptKim = new Compte("001", 5000);
+//    var_dump($cptKim);
+//
+//    echo "<br/>";
+//    echo "<h2>Numero = {$cptKim->getNumero()}</h2>";
+//    echo "<h2>Solde = {$cptKim->getSolde()} €</h2>";
+//
+//    echo "<h2>" . $cptKim . "</h2>";
+//
+//    $cptKim->deposer(1550);
+//    echo "<h2>" . $cptKim . "</h2>";
+//
+////    $cptKim->retirer(-500);
+//    $cptKim->retirer(2000);
+//    echo "<h2>" . $cptKim . "</h2>";
 
-    echo "<br/>";
-    echo "<h2>Numero = {$cptKim->getNumero()}</h2>";
-    echo "<h2>Solde = {$cptKim->getSolde()} €</h2>";
-
-    echo "<h2>" . $cptKim . "</h2>";
-
-    $cptKim->deposer(1550);
-    echo "<h2>" . $cptKim . "</h2>";
-
-//    $cptKim->retirer(-500);
-    $cptKim->retirer(2000);
-    echo "<h2>" . $cptKim . "</h2>";
+$persFatima = new Personne("Fatima",25);
