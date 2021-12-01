@@ -9,7 +9,7 @@
 
     require_once 'classes/Compte.php';
     require_once 'classes/Personne.php';
-
+    require_once 'classes/Stagiaire.php';
     /*
        // Je cree une instance de Compte avec le mot clé new, ou je crée un nouvel objet de type Compte
        $cptKim = new Compte();
@@ -106,10 +106,16 @@
 //    echo "<h3>{$persFatima}</h3>";
 
     $persFatima = new Personne("Fatima", 25);
-    echo "<h4>".Personne::getCompteur()."</h4>";
+//    echo "<h4>" . Personne::getCompteur() . "</h4>";
 
     $persSofian = new Personne("Sofian", 25);
-    echo "<h4>".Personne::getCompteur()."</h4>";
+    echo "<h4>" . $persSofian . "</h4>";
 
-    $persKim = new Personne("Kim", 25);
-    echo "<h4>".Personne::getCompteur()."</h4>";
+    $persKim = new Stagiaire("DW & WM", "Kim", 25);
+    //    echo "<h4>" . Stagiaire::getCompteur() . "</h4>";
+    //    $persKim->seMarier($persFatima);
+
+//    $persPiantoni = new Stagiaire("Piantoni", 25);
+//    $persPiantoni->seMarier($persKim);
+    echo "<h4>" . $persKim . "</h4>";
+

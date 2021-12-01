@@ -21,6 +21,11 @@
             self::$compteur++;
         }
 
+        protected function autreMethode(): void
+        {
+
+        }
+
         // Methode d'instance
         public function setPrenom(string $prenom): void
         {
